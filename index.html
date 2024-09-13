@@ -41,7 +41,7 @@
         <div class="row mt-6">
             <div class="col-md-8 mx-auto text-center">
                 <h1> Surfboards have a carbon footprint</h1>
-                <p class="lead mb-5">Turn board emissions into trees in 5 mins.  </p>
+                <p class="lead mb-5">Turn board emissions into <br>trees in 5 mins.  </p>
                 <a href=#calculator class="btn btn-success svg-icon">
                     Start Offset Here
                 </a>
@@ -89,31 +89,43 @@
       </p>
   
       <!-- How it works section -->
-      <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+      <style>
+        .responsive-container {
+          display: flex;
+          flex-direction: column; /* Arrange items in a vertical column */
+          justify-content: center;
+          align-items: center;
+          gap: 1rem; /* Add spacing between items */
+        }
+      
+        .step-text {
+          font-size: 1.125rem; /* Default size (18px) */
+          font-weight: 600; /* Semi-bold text */
+          text-align: center; /* Center-align text */
+        }
+      
+        @media (min-width: 768px) { /* Adjust text size on larger screens */
+          .step-text {
+            font-size: 1.25rem; /* Larger size (20px) */
+          }
+        }
+      </style>
+      
+      <div class="responsive-container">
         <!-- Step 1 -->
-        <div class="flex flex-col items-center"> 
-          <p class="text-lg md:text-xl">Answer 5 questions</p>
-        </div>
+        <div class="step-text">Answer 5 questions</div>
       
         <!-- Arrow -->
-        <div class="flex items-center">
-          <span class="text-lg md:text-xl">↓</span>
-        </div>
+        <div class="step-text">↓</div>
       
         <!-- Step 2 -->
-        <div class="flex flex-col items-center">
-          <p class="text-lg md:text-xl">We calculate the emissions</p>
-        </div>
+        <div class="step-text">We calculate the emissions</div>
       
         <!-- Arrow -->
-        <div class="flex items-center">
-          <span class="text-lg md:text-xl">↓</span>
-        </div>
+        <div class="step-text">↓</div>
       
         <!-- Step 3 -->
-        <div class="flex flex-col items-center">
-          <p class="text-lg md:text-xl">Then donate money to plant trees</p>
-        </div>
+        <div class="step-text">Then donate money to plant trees</div>
       </div>
       
   </section>
